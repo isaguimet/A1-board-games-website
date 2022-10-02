@@ -1,15 +1,112 @@
+body {
+    margin: 0;
+}
+
+#main-container {
+    background-color: RGB(246, 237, 222);
+}
+
+/* Styling for banner image and title over img */
+.banner-img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title-banner {
+    position: absolute;
+    top: 15%;
+    left: 28%;
+    text-align: center;
+    font-size: 75px;
+}
+
+.img-banner {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Styling for navigation bar*/
 nav {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: mintcream;
+    /*background-color: rgb(37, 60, 133);*/
+    /*background-color: rgb(246, 159, 132);*/
+    background-color: rgb(122, 165, 200);
 }
 
-h3 {
-    color: darkblue;
+nav a {
+    font-size: x-large;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 35px 5px;
 }
 
+nav a:hover {
+    text-decoration-line: underline;
+}
+
+main {
+    padding-left: 20px;
+}
+
+h3, li {
+    color: black;
+    font-size: 20px;
+}
+
+/* Common to game pages (excludes home and board game comparison) */
+.type-of-game {
+    font-size: 45px;
+    padding-left: 20px;
+}
+
+.game-title {
+    font-size: 35px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+p {
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Styling for the images of the board game pages */
+.game-images {
+    width: 750px;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 20px;
+    border-radius: 5%;
+}
+
+.index-images {
+    width: 750px;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 20px;
+    border-radius: 5%;
+}
+
+/* Positions video to be in the bottom middle of its parent container */
+iframe {
+    position: relative;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+/* Styling for Board Game comparison page */
 table, th, td {
     margin-left: auto;
     margin-right: auto;
@@ -24,32 +121,21 @@ th {
     background-color: mintcream;
 }
 
-tr:nth-child(even) {
-    background-color: #fff4b0;
+/* Styling for the footer (jumps to the top of the page) */
+footer {
+    background-color: rgb(122, 165, 200);
+    color: white;
+    font-size: 20px;
+    padding-block: 15px;
+    text-align: center;
 }
 
-.image-container {
-    position: relative;
-    text-align: center;
+footer a {
+    text-decoration: none;
     color: white;
 }
 
-.title-banner {
-    position: absolute;
-    top: 5%;
-    left: 33%;
-    text-align: center;
-    font-size: 75px;
-}
-
-.img-banner {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.game-images {
-    width: 50%;
-    height: 50%;
+footer a:hover {
+    text-decoration-line: underline;
 }
 

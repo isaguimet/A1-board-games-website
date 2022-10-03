@@ -7,10 +7,10 @@ main {
 }
 
 #main-container {
-    background-color: RGB(246, 237, 222);
+    background-color: rgb(246, 237, 222);
 }
-/* Styling for banner image and title over img */
 
+/* Styling for banner image and title over img */
 .banner-img-container {
     position: relative;
     text-align: center;
@@ -137,4 +137,3 @@ footer a {
 footer a:hover {
     text-decoration-line: underline;
 }
-
